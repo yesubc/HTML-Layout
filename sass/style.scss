@@ -1,0 +1,63 @@
+@import "variables";
+@import "mixin";
+@import "reset";
+@import "font";
+@import "layout";
+@import "blocksets";
+@import "media";
+
+body{
+	font: normal 1em $global-font;
+}
+
+/* BORDER RADIUS */
+.roundedborder {
+  @include border-radius (4px);
+}
+
+.float-left{
+	float: $left;
+}
+.float-right{
+	float: $right;
+}
+
+.default{
+	min-height:500px;
+	background: $lightgray;
+}
+
+.width-wrapper{
+	width:$width-wrapper;
+    margin: 0 auto;
+}
+
+.left-width{
+	width: $left-width;
+}
+.main-width{
+	width: $main-width;
+}
+.right-width{
+	width: $right-width;
+}
+
+/* INNER COL WIDTH*/
+.col-left{
+	width: $col-left;
+}
+
+.col-main{
+	width: $col-main;
+}
+.col-right{
+	width: $col-right;
+}
+
+.content {
+	padding: 15px;
+}
+
+.padding{
+	padding: 20px 0;
+}

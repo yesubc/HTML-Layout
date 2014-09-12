@@ -1,0 +1,37 @@
+/* COLOR*/
+$blue: #099acb;
+$white: #ffffff;
+$black: #000000;
+$gray: #666666;
+$lightgray:#cccccc;
+
+/* FLOAT */
+$left: left;
+$right: right;
+
+/* FONT */
+$global-font: arial, sans-serif;
+
+/* DISPLAY */
+$block: block;
+
+/* Width Variables */
+$width-default:100%;
+$width-wrapper:1130em/16;
+
+$left-width: (300/1130)*100%;
+$main-width: (810/1130)*100%;
+$right-width: (300/1130)*100%;
+
+$col-left: (300/810)*100%;
+$col-main: (490/810)*100%;
+$col-right: (300/810)*100%;
+
+/* BREAKPOINTS */
+$bp-large: 60em;
+$bp-medium: 40em;
+$bp-small: 30em;
+
+/* DEVICE */
+$information-ipad-landscape: "only screen and (width : 1024px)";
+$information-ipad-portrait: "only screen and (max-width : 768px)";

@@ -1,0 +1,158 @@
+/* LAYOUT*/
+
+.wrapper {
+	overflow: hidden;
+}
+
+.container {
+	max-width: 70.625em;
+	margin: 0 auto;
+	padding: 0 20px;
+	box-shadow: 0 0 76px rgba(0, 0, 0, 0.5);
+}
+
+header,footer {
+	margin: 0 -9999px;
+	padding: 20px 9999px;
+	clear: both;
+	overflow: hidden;
+	background: linear-gradient(to bottom, rgba(125, 185, 232, 0.5) 0%, rgba(125, 185, 232, 0.5) 1%, rgba(125, 185, 232, 0.5) 99%, rgba(125, 185, 232, 0.5) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.navigation {
+	margin: 0 -9999px;
+	padding: 20px 9999px;
+	color: #fff;
+	background: #496778;
+}
+
+.main-container {
+	margin: 0 -9999px;
+	padding: 0 9999px;
+	min-height: 600px;
+	clear: both;
+	overflow: hidden;
+}
+
+.main-wrapper{
+	max-width:$width-default;
+}
+
+/* COL ONE LAYOUT */
+.col1-layout{
+	width:$width-default;
+	@extend .padding;
+    .main{
+        width:$width-default;
+        .col-main{
+            @extend .default;
+            width:$width-default;
+        }
+    }
+}
+
+/* COL TWO LEFT LAYOUT*/
+.col2-left-layout {
+	width:$width-default;
+	@extend .padding;
+	.col-left{
+		@extend .float-left, .left-width, .default;
+	}
+	.main{
+		width: $main-width;
+		@extend .float-right;
+		.col-main{
+			@extend .default;
+			width:$width-default;
+		}
+	}
+}
+
+/* COL TWO RIGHT LAYOUT*/
+.col2-right-layout {
+	width:$width-default;
+	@extend .padding;
+	.main{
+		width: $main-width;
+		@extend .float-left;
+		.col-main{
+			@extend .default;
+			width:$width-default;
+		}
+	}
+	.col-right{
+		width: $right-width;
+		@extend .float-right,.default;
+	}
+}
+
+/* COL THREE LEFT LAYOUT*/
+.col3-left-layout {
+	width:$width-default;
+	@extend .padding;
+	.col-left{
+		@extend .float-left, .left-width, .default;
+	}
+	.main{
+		@extend .float-right, .main-width;
+		.col-main{
+			@extend .float-left, .col-main, .default;
+		}
+		.col-right{
+			@extend .float-right, .col-right, .default;
+		}
+	}
+}
+
+/* COL THREE RIGHT LAYOUT*/
+.col3-right-layout {
+	width:$width-default;
+	@extend .padding;
+	.main{
+		@extend .float-left,.main-width;
+		.col-left{
+			@extend .float-left, .col-left, .default;
+		}
+		.col-main{
+			@extend .float-right, .col-main, .default;
+		}
+	}
+	.col-right{
+		@extend .float-right, .right-width,.default;
+	}
+}
+/* COLUMN THREE L LEFT LAYOUT*/
+.col3-l-left-layout {
+	width:$width-default;
+	@extend .padding;
+	.col-left{
+		@extend .float-left, .left-width, .default;
+	}
+	.main{
+		@extend .float-right, .main-width;
+		.col-l-left{
+			@extend .float-left, .col-left, .default;
+		}
+		.col-main{
+			@extend .float-right, .col-main, .default;
+		}
+	}
+}
+
+/* COLUMN THREE R RIGHT LAYOUT*/
+.col3-r-right-layout {
+	width:$width-default;
+	@extend .padding;
+	.main{
+		@extend .float-left, .main-width;
+		.col-main{
+			@extend .float-left, .col-main, .default;
+		}
+		.col-r-right{
+			@extend .float-right, .col-right, .default;
+		}
+	}
+	.col-right{
+		@extend .float-right, .right-width, .default;
+	}
+}
